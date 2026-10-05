@@ -45,11 +45,13 @@ export function createApp({
     children: [
       createElement('p', {
         className: 'stats__item',
-        children: [document.createTextNode('Ходы: '), movesValue],
+        text: 'Ходы: ',
+        children: [movesValue],
       }),
       createElement('p', {
         className: 'stats__item',
-        children: [document.createTextNode('Пары: '), pairsValue],
+        text: 'Пары: ',
+        children: [pairsValue],
       }),
     ],
   });
